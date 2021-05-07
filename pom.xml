@@ -9,11 +9,11 @@
         <version>2.2.2.RELEASE</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
-    <groupId>io.leiva</groupId>
-    <artifactId>soap-client-sample</artifactId>
+    <groupId>com.camilorava</groupId>
+    <artifactId>soap-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>soap-client-sample</name>
-    <description>Demo project for Spring Boot</description>
+    <name>soap-client</name>
+    <description>Client Soap WS</description>
 
     <properties>
         <java.version>1.8</java.version>
