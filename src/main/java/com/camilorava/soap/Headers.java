@@ -1,4 +1,4 @@
-package soap;
+package com.camilorava.soap;
 
 import java.io.IOException;
 import java.util.Map;

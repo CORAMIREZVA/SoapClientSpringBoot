@@ -1,4 +1,4 @@
-package soap;
+package com.camilorava.soap;
 
 import org.apache.http.auth.UsernamePasswordCredentials;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,12 +11,12 @@ import org.springframework.ws.transport.http.HttpComponentsMessageSender;
 public class ConfigurationSoap {
 
     @Autowired
-    private Client client;
+    private SoapClient client;
 
     @Bean
     public Jaxb2Marshaller marshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-        marshaller.setContextPath("com.dataaccess.webservicesserver");
+        marshaller.setContextPath("com.camilorava.dataaccess.webserviceserver");
         return marshaller;
     }
 
@@ -28,7 +28,7 @@ public class ConfigurationSoap {
     }
 
     @Bean
-    public Client soapClient(Jaxb2Marshaller marshaller) {
+    public SoapClient soapClient(Jaxb2Marshaller marshaller) {
         client.setMessageSender(getMessageSender());
         client.setMarshaller(marshaller);
         client.setUnmarshaller(marshaller);

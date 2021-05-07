@@ -1,7 +1,7 @@
-package soap;
+package com.camilorava.soap;
 
-import com.dataaccess.webservicesserver.NumberToWords;
-import com.dataaccess.webservicesserver.NumberToWordsResponse;
+import com.camilorava.dataaccess.webserviceserver.NumberToWords;
+import com.camilorava.dataaccess.webserviceserver.NumberToWordsResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
@@ -10,7 +10,7 @@ import java.math.BigInteger;
 
 @Service
 @Component("NumberConversion")
-public class Client extends WebServiceGatewaySupport {
+public class SoapClient extends WebServiceGatewaySupport {
 
     private String endpoint = "https://www.dataaccess.com/webservicesserver/NumberConversion.wso?wsdl";
 
